@@ -1,0 +1,7 @@
+.env
+.venv
+blueprint.MD
+__pycache__/
+*.pyc
+*.pyo
+*.db
