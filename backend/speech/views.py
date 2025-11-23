@@ -16,6 +16,6 @@ def match_speech_api(request):
         return Response({"error": "audio_file and text are required"}, status=400)
 
     # Save temp audio and analyze
-    result = compare_speech_with_text(audio_file.temporary_file_path(), text)
+    result = compare_speech_with_text(audio_file, text)
 
     return Response(result)
